@@ -5,7 +5,6 @@
   },
   "settings": false,
   "theme": "Pro Light",
-  "title": null,
   "group_by": ["Athlete Age Bucket"],
   "split_by": ["sport"],
   "columns": ["total"],

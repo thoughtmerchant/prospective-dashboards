@@ -1,0 +1,35 @@
+{
+  "plugin": "Y Line",
+  "plugin_config": {
+    "hideKeys": [],
+    "legend": {
+      "height": "52px",
+      "left": "542px",
+      "top": "27px",
+      "width": "200px"
+    },
+    "splitMainValues": [
+      "Equestrian Total Medals"
+    ]
+  },
+  "settings": true,
+  "theme": "Pro Light",
+  "title": "Equestrian vs Everyone Else",
+  "group_by": [
+    "Athlete Age Bucket"
+  ],
+  "split_by": [],
+  "columns": [
+    "Equestrian Total Medals",
+    "All Sports Total Medals"
+  ],
+  "filter": [],
+  "sort": [],
+  "expressions": [
+    "// Athlete Age Bucket\nbucket(\"age\", 5)",
+    "\"sport\" == 'Equestrian'",
+    "// Equestrian Total Medals\nif (\"sport\"=='Equestrian'){\"total\"}else{0}",
+    "// All Sports Total Medals\nif(\"sport\"=='Equestrian'){float(0)}else{float(\"total\")}"
+  ],
+  "aggregates": {}
+}
