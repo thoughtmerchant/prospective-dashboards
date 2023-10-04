@@ -1,0 +1,1 @@
+{"plugin":"Y Area","plugin_config":{"legend":{"height":"768px","left":"","top":"","width":""}},"settings":true,"theme":"Pro Light","title":null,"group_by":["Athlete Age Bucket"],"split_by":["sport"],"columns":["total"],"filter":[],"sort":[["total","col desc"]],"expressions":["// Athlete Age Bucket\nbucket(\"age\", 1)"],"aggregates":{}}
